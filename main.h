@@ -1,10 +1,9 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-#include <limits.h>
+
 #include <stdarg.h>
 #include <stdlib.h>
-#include <unistd.h>
 
 /* Flag Modifier Macros */
 #define PLUS 1
@@ -59,6 +58,10 @@ typedef struct flag_s
 } flag_t;
 
 int _printf(const char *format, ...);
+
+/*write function _putchar*/
+int _putchar(char c);
+int _puts(char *str);
 
 /* Conversion Specifier Functions */
 unsigned int convert_c(va_list args, buffer_t *output,
